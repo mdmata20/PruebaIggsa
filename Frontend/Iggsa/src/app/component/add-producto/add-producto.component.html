@@ -1,0 +1,33 @@
+<app-navegacion></app-navegacion>
+
+
+<div class="col-md-4 offset-md-4">
+    <form class="container">
+        <div class="form-group">
+          <label for="exampleInputEmail1">nombre: </label>
+          <input type="text" class="form-control" name="nombre" [(ngModel)]="producto.nombre" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre Producto">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Caducado: </label>
+            <input type="number" class="form-control" name="caducado" [(ngModel)]="producto.caducado" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Caducado">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">PrecioU: </label>
+            <input type="text" class="form-control" name="preciou" [(ngModel)]="producto.PrecioU" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Precio Unitario">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Cantidad De Producto: </label>
+            <input type="number" class="form-control" name="cantidadProducto" [(ngModel)]="producto.CantidadProducto" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Cantidad de Producto">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">fechaIngreso: </label>
+            <input type="text" class="form-control" name="fechaingreso" [(ngModel)]="producto.fechaIngreso" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Fecha de Ingreso">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Bodega: </label>
+            <input type="text" class="form-control" name="bodega" [(ngModel)]="producto.id_bodega" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Fecha de Ingreso">
+        </div>
+        <br>
+        <button type="submit" class="btn  btn-primary btn-block" (click)="addProducto()">Agregar Producto</button>
+    </form>
+</div>

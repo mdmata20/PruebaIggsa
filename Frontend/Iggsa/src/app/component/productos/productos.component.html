@@ -1,0 +1,26 @@
+<app-navegacion></app-navegacion>
+
+<table class="table container">
+    <thead>
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">caducado</th>
+        <th scope="col">PrecioU</th>
+        <th scope="col">CantidadProducto</th>
+        <th scope="col">fechaIngreso</th>
+        <th scope="col">Accion</th>
+      </tr>
+    </thead>
+    
+    <tbody *ngFor="let producto of product" >
+      <tr >
+        <th scope="row">{{producto.nombre}}</th>
+        <td>{{producto.caducado}}</td>
+        <td>{{producto.PrecioU}}</td>
+        <td>{{producto.CantidadProducto}}</td>
+        <td>{{producto.fechaIngreso}}</td>
+        <td>{{producto.fechaIngreso}}</td>
+        <button type="button" class="btn btn-info">Eliminar</button>
+      </tr>
+    </tbody>
+</table>

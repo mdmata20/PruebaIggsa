@@ -1,0 +1,17 @@
+<app-navegacion></app-navegacion>
+
+<table class="table container">
+    <thead>
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">fechaIngreso</th>
+      </tr>
+    </thead>
+    
+    <tbody *ngFor="let producto of product" >
+      <tr >
+        <th scope="row">{{producto.nombre}}</th>
+        <td>{{producto.fechaIngreso}}</td>
+      </tr>
+    </tbody>
+</table>
